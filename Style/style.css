@@ -1,9 +1,8 @@
-/* Google font */
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@500&family=Kantumruy+Pro&family=Open+Sans&family=Poppins:ital,wght@0,400;0,500;0,700;1,300&family=Prompt:ital@0;1&family=Rubik&display=swap');
 
-/* common  */
+/* Common */
 * {
-    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
@@ -11,70 +10,41 @@
 body {
     font-family: 'Poppins', sans-serif;
 
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
-/* header */
-
-.header-container {
+/* Banner */
+.container {
     background-image: linear-gradient(black, grey);
-    text-align: center;
-
-    border-radius: 30px;
-    overflow: hidden;
-    color: white;
-    width: 80%;
-    height: 82vh;
-    margin: 40px 90px 40px 150px;
-
-
-
-}
-
-.header-full {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    width: 100%;
-
-    padding: 25px 290px 0px 100px;
+    align-items: stretch;
+    margin-top: 50px;
+    border-radius: 30px;
 
 }
 
-.header-title {
-
+.banner-text {
     width: 50%;
+    color: white;
+    padding-left: 100px;
     padding-top: 70px;
 
 }
 
-.header-text {
-    width: 100%;
-    height: 80%;
-
-    text-align: left;
-
-
-
-
-}
-
-.header-text h1 {
+.banner-text h1 {
+    font-size: 4em;
     font-weight: 700;
-    font-size: 60px;
-
-
 }
 
-.header-text h1:hover {
-    color: black;
-}
-
-.header-text p {
+.banner-text p {
+    font-size: 1em;
     font-weight: 400;
-    font-size: 16px;
-    padding-bottom: 20px;
-
+    margin-bottom: 40px;
 }
-
 
 .button-part a {
     text-decoration: none;
@@ -103,26 +73,24 @@ body {
     margin-left: 10px;
 }
 
-.header-image {
-
+.banner-image {
     width: 50%;
-
+    margin-top: 20px;
+    margin-right: 70px;
 
 }
 
-.header-image img {
-    object-fit: cover;
-    width: 581px;
-    height: 613px;
+.banner-image img {
+    width: 100%;
+    height: 100%;
 }
 
-
-/* banner */
+/* main part */
 .left-bar {
     position: absolute;
-    width: 312px;
-    height: 312px;
-    left: 155px;
+    width: 305px;
+    height: 286px;
+    left: 170px;
     top: 730px;
     background-color: #161616;
     border-radius: 10px;
@@ -132,19 +100,19 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
-    margin: 30px 0px 0px 30px;
-    padding: 20px 10px 10px 10px;
+    margin: 25px 0px 0px 34px;
+    padding: 0px;
     border: 1px solid transparent;
     color: #161616;
-    width: 252px;
-    height: 64px;
+    width: 233px;
+    height: 58px;
     display: flex;
     flex-direction: column;
-
-
     text-align: center;
     background-color: white;
     border-radius: 10px;
+
+    justify-content: center;
 }
 
 #blog {
@@ -153,8 +121,9 @@ body {
 }
 
 .blog-bar {
-    padding-left: 490px;
-    width: 70%;
+
+    padding-left: 347px;
+    padding-top: 33px;
 
 
 }
@@ -275,16 +244,19 @@ body {
     margin-bottom: 30px;
 }
 
-
-
-
+/* footer start */
 footer {
     background-color: #161616;
-    width: 100%;
-    height: 100%;
+    width: 1599px;
     font-size: 40px;
     color: white;
     text-align: center;
+    background-size: cover;
+    position: absolute;
+    left: -80px;
+    margin-top: 120px;
+
+
 }
 
 
@@ -300,8 +272,9 @@ footer>ul>li>a {
 }
 
 footer h2 {
-    padding-top: 70px;
-    margin-top: 120px;
+
+    margin-top: 60px;
+    margin-left: 92px;
 }
 
 ul {
@@ -312,7 +285,7 @@ ul {
     list-style-type: none;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     width: 80%;
-    margin-left: 150px;
+    margin-left: 190px;
     padding-bottom: 18px;
 }
 
@@ -321,112 +294,86 @@ ul {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 6px 10px 6px 10px;
     border-radius: 25%;
-    margin-bottom: 70px;
-    margin-left: 10px;
+    margin-bottom: 170px;
+    margin-left: 5px;
+}
+
+.social-site {
+    margin-left: 80px;
 }
 
 .social-site a {
     text-align: none;
     color: white;
+
+
 }
 
 
 
-/* kkk */
+
+
+
+
+
+
+/* Media */
+/* Mobile view */
 @media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px 15px 15px;
+    }
 
-
-    .header-container {
-        width: 85%;
-        height: 91vh;
-
+    .banner-text {
+        width: 66%;
         text-align: center;
-        margin: 30px 24px 68px 26px;
-        padding: 0px;
-        position: relative;
-        border-radius: 10px;
-        background-color: #161616;
-
+        padding-left: 70px;
 
 
     }
 
-
-
-    .header-full {
-        display: grid;
-
-        grid-template-rows: repeat(2, 1fr);
-        width: 40%;
-        height: 30vh;
-        text-align: center;
-
-        padding: 8px;
-        margin: 0px;
-
-
-
-
-
+    .banner-text h1 {
+        font-size: 1.5em;
 
     }
 
-    .header-title {
-        width: 330px;
-        border: 6px solid green;
-        padding-top: 4px;
-        margin-left: 19px;
-
+    .banner-text p {
+        font-size: 0.6em;
 
     }
 
-    .header-text {
+    .banner-image {
+        width: 51%;
+        margin-top: 30px;
+        margin-left: 116px;
+    }
+}
 
-        width: 85%;
-        height: 80%
+/* Tab view */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    body {
+        width: 100%;
     }
 
-    .header-text h1 {
-        font-weight: 700;
-        font-size: 40px;
+    .container {
+        width: 90%;
+        height: 48vh;
+        margin-left: 39px
     }
 
-    header-text p {
-        font-weight: 400;
-        font-size: 14px;
-        margin: 0px
+    .banner-text {
+        width: 51%;
     }
 
-    .button-part a {
-        text-decoration: none;
-        padding: 8px 12px;
-
-
-        background-color: #DD0000;
-        font-weight: 400;
-        font-size: 20px;
-        color: white;
-        border-radius: 5px;
-
+    .banner-text h1 {
+        font-size: 2.5em;
     }
 
-
-    .header-image {
-
-        width: 50%;
-        height: 50%;
-        border: 6px solid green;
-    }
-
-    .header-image img {
-        position: relative;
-        top: 449;
-        margin-top: 40px;
-        margin-left: 45px;
-        object-fit: cover;
-        width: 233px;
-        height: 245px;
-        z-index: 1;
+    .banner-text p {
+        font-size: 0.8em;
 
     }
 }
