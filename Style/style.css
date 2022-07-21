@@ -102,7 +102,7 @@ body {
     font-weight: 500;
     margin: 25px 0px 0px 34px;
     padding: 0px;
-    border: 1px solid transparent;
+    border: 1px solid #E8E8E8;
     color: #161616;
     width: 233px;
     height: 58px;
@@ -320,14 +320,16 @@ ul {
 /* Media */
 /* Mobile view */
 @media screen and (max-width: 576px) {
+
     .container {
-        width: 90%;
+        width: 560px;
         display: flex;
         flex-direction: column;
         margin: 20px 20px 15px 15px;
     }
 
-    .banner-text {
+    .banner-text,
+    .left-bar {
         width: 66%;
         text-align: center;
         padding-left: 70px;
@@ -350,6 +352,36 @@ ul {
         margin-top: 30px;
         margin-left: 116px;
     }
+
+    .left-bar {
+        position: absolute;
+        width: 305px;
+        height: 286px;
+        left: -30px;
+        top: 534px;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .right {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 570px;
+
+    }
+
+    footer {
+        height: 370vh;
+    }
+
+
+
+    footer>ul {
+        width: 16%;
+        text-align: start;
+        padding-left: 639px;
+        flex-direction: column;
+    }
 }
 
 /* Tab view */
@@ -359,9 +391,9 @@ ul {
     }
 
     .container {
-        width: 90%;
+        width: 1270px;
         height: 48vh;
-        margin-left: 39px
+        margin-left: 113px
     }
 
     .banner-text {
@@ -376,4 +408,46 @@ ul {
         font-size: 0.8em;
 
     }
+
+    .right {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        padding-top: 82px;
+    }
+
+    .left-bar {
+        width: 319px;
+        margin-top: 82px;
+    }
+
+    .left-bar a {
+
+        margin: 34px 0px 0px 49px;
+
+        width: 233px;
+        height: 49px;
+
+
+    }
+
+    .blog-bar,
+    .flag {
+        padding-left: 547px;
+
+    }
+
+    .none {
+        display: none;
+    }
+
+    footer {
+        height: 44vh;
+    }
+
+    footer>ul {
+        width: 16%;
+        text-align: start;
+        padding-left: 540px;
+    }
+
 }
