@@ -247,7 +247,7 @@ body {
 .view-all {
     text-align: center;
     padding-top: 70px;
-    padding-left: 683px;
+    padding-left: 594px;
     display: none;
 }
 
@@ -255,7 +255,7 @@ body {
 footer {
     background-color: #161616;
     width: 1599px;
-    height: 40vh;
+    height: 65vh;
     font-size: 40px;
     color: white;
     text-align: center;
@@ -387,7 +387,7 @@ ul {
     }
 
     footer {
-        height: 55vh;
+        height: 145vh;
     }
 
 
@@ -397,6 +397,8 @@ ul {
         text-align: start;
         padding-left: 639px;
         flex-direction: column;
+
+
     }
 }
 
@@ -461,7 +463,7 @@ ul {
     }
 
     footer {
-        height: 35vh;
+        height: 55vh;
     }
 
     footer>ul {
