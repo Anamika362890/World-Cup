@@ -333,7 +333,8 @@ ul {
     }
 
     .container {
-        width: 560px;
+        width: 598px;
+        height: 561px;
         display: flex;
         flex-direction: column;
         margin: 20px 20px 15px 15px;
@@ -362,24 +363,31 @@ ul {
     .banner-image {
         width: 51%;
         margin-top: 30px;
-        margin-left: 116px;
+        margin-left: 166px;
+    }
+
+    .blog-bar {
+        padding-left: 219px;
+        padding-top: 0px;
     }
 
     .left-bar {
         position: relative;
         width: 305px;
         height: 286px;
-        left: -30px;
-        top: 534px;
-        background-color: white;
+        left: -58px;
+        top: 61px;
+        background-color: black;
         border-radius: 10px;
         text-align: center;
+        padding-top: 15px;
     }
 
     .right {
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 570px;
-
+        margin-top: 120px;
+        justify-content: center;
+        margin-left: 50px;
     }
 
     .view-all {
@@ -387,15 +395,19 @@ ul {
     }
 
     footer {
-        height: 145vh;
+        height: 105vh;
+        width: 710px;
     }
+
+
+
 
 
 
     footer>ul {
         width: 16%;
         text-align: start;
-        padding-left: 639px;
+        padding-left: 170px;
         flex-direction: column;
 
 
